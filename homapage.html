@@ -8,21 +8,24 @@
     <title>Home Page</title>
 </head>
 <style>
+    /*first table*/
     .table {
         height: auto;
         width: 100vw;
         border: 2px solid black;
-       
+
 
     }
 
+    /*first table first box*/
     .first-box {
         height: 60px;
         width: 400px;
-        background-color: #CAE0BC;
+        background-color: rgb(125, 160, 195);
         border: 2px solid black;
     }
 
+    /*first table second box*/
     .second-box {
         height: 80vh;
         width: 100vw;
@@ -31,26 +34,45 @@
 
     }
 
+    /*first table third box*/
     .third-box {
         height: 80vh;
         width: 100vw;
-        background-color: #EBE8DB;
+        background-color: rgb(84, 79, 79);
+
         border: 2px solid black;
 
     }
+
+    /*first table fourth box*/
 
     .fourth-box {
         height: 80vh;
         width: 100vw;
-        background-color: #A4B465;
+        background-color: rgb(88, 130, 140);
         border: 2px solid black;
     }
 
+    /*first table fifth box*/
     .fifth-box {
         height: 80vh;
         width: 100vw;
-        background-color: #CAE0BC;
+        background: rgb(153,201,25);
+background: linear-gradient(90deg, rgb(71, 69, 114) 12%, rgba(9,86,121,1) 44%, rgb(101, 91, 142),rgba(101, 101, 118, 0.727) 100%);
         border: 2px solid black;
+        
+    }
+
+    /*second table*/
+    .second-table {
+        width: 100%;
+        height: 90%;
+        border-collapse: collapse;
+    }
+
+    /*second  table first td*/
+    .second-table-td {
+        border: solid 3px black;
     }
 </style>
 
@@ -73,8 +95,12 @@
         <!-- second tr -->
         <tr>
             <td class="second-box" colspan="4" id="home">
-                <h1 style="color: #F5F7F8;">My Self <span style="color: #c84c17;">Sanchit Mahant</span><br>I Am A Full
-                    Stack Developer</h1>
+                <img src="../assets/sanchitmahant.jpg" height="220px" width="250px"
+                    style="border-radius: 60%; margin-left: 41%; border: solid 2px white;">
+
+                <h1 style="color: #F5F7F8; text-align: center;">My Self <span style="color: #c84c17;">Sanchit
+                        Mahant</span><br><i>I Am A Full Stack Developer</i>
+                    </h1>
             </td>
 
         </tr>
@@ -82,8 +108,15 @@
         <!-- third tr -->
         <tr>
             <td class="third-box" colspan="4" id="about">
-                <h1>About</h1><br>
-                <h2>Hello there! I'm Sanchit Mahant, a passionate Full Stack Web Developer <br> with a keen interest in
+                <img style="border-radius: 10%;"
+                    src="https://quotefancy.com/media/wallpaper/3840x2160/2000910-Joel-Spolsky-Quote-Good-software-like-wine-takes-time.jpg"
+                    height="250px" width="300px">
+
+
+                <h1 style="text-align: center;">About</h1><br>
+
+                <h2 style="text-align: center;">Hello there! I'm Sanchit Mahant, a passionate Full Stack Web Developer
+                    <br> with a keen interest in
                     leveraging technology to create impactful solutions. <br> With a solid foundation in both front-end
                     and
                     back-end development, <br>I specialize in creating project from various language.
@@ -93,28 +126,94 @@
         <!-- fourth tr -->
         <tr>
             <td class="fourth-box" colspan="4" id="project">
-                <h1>My Project</h1>
-                <a href="./calculator.html">
-                    <h3>Calculator</h3>
-                </a>
-                <a href="./cpucomp.html">
-                    <h3>CPU Component</h3>
-                </a>
-                <a href="./chessproject.html">
-                    <h3>Chess</h3>
-                </a>
-                <a href="./studentdata.html">
-                    <h3>Student Data</h3>
-                </a>
-                <a href="./form.html">
-                    <h3>Form</h3>
-                </a>
-                <a href="./tablepract.html">
-                    <h3>Table Tag</h3>
-                </a>
-                <a href="./form-tags-two.html">
-                    <h3>FORM HTML</h3>
-                </a>
+                <!-- second table
+                  -->
+                <table class="second-table">
+                    <caption>
+                        <h1>HTML Project</h1>
+                    </caption>
+                    <tr>
+                        <!-- resume -->
+                        <td class="second-table-td">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/689/327/small/resume-cv-template.jpg"
+                                height="220px" width="330px">
+                            <a href="./resume.html">
+                                <h2 style="text-align: center;">Resume</h2>
+                            </a>
+                        </td>
+
+                        <!--  ches-->
+                        <td class="second-table-td">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/board/1/c/0/premium-quality-black-white-chess-board-with-32-pawns-1-0-3-hhs-original-imaghzmjzrvnuyfs.jpeg?q=20&crop=false"
+                                height="220px" width="330px">
+                            <a href="./chessproject.html">
+                                <h2 style="text-align: center;">Chess</h2>
+                            </a>
+                        </td>
+                        <!-- student data  -->
+                        <td class="second-table-td">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3pvvdEqvnjPlpej9NJldMkEfDy3a0kXwOQ&s"
+                                height="220px" width="330px">
+                            <a href="./studentdata.html">
+                                <h2 style="text-align: center;">Student Data</h2>
+                            </a>
+                        </td>
+
+                        <!-- calculator -->
+                        <td class="second-table-td">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcuqZpxzUU47pk2cEyKSGy_S7CXBoAszF80A&s"
+                                height="220px" width="330px">
+                            <a href="./calculator.html">
+                                <h2 style="text-align: center;">Calculator</h2>
+                            </a>
+                        </td>
+
+
+
+
+                    </tr>
+
+                    <tr>
+                        <!-- cpu component -->
+                        <td class="second-table-td">
+                            <img src="https://t3.ftcdn.net/jpg/00/81/24/72/360_F_81247213_OYvGTCn5mnQQ2c0gWJ1U5ixcbmNBaMOp.jpg"
+                                height="220px" width="330px">
+                            <a href="./cpucomp.html">
+                                <h2 style="text-align: center;">CPU Component</h2>
+                            </a>
+                        </td>
+                        <!-- form tag -->
+                        <td class="second-table-td">
+                            <img src="https://i.ytimg.com/vi/_JrIZaD-K-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmghCTvgjjoeTkQH4q6V51Nn9S2w"
+                                height="220px" width="330px">
+                            <a href="./form.html">
+                                <h2 style="text-align: center;">Sign Up Form</h2>
+                            </a>
+                        </td>
+                        <!-- report card -->
+                        <td class="second-table-td">
+                            <img src="https://marketplace.canva.com/EADajq5bun4/1/0/1131w/canva-blue-and-gray-bordered-high-school-report-card-JZh8rodULdI.jpg"
+                                height="220px" width="330px">
+                            <a href="./reportcard.html">
+                                <h2 style="text-align: center;">Report Card</h2>
+                            </a>
+                        </td>
+
+                        <!-- form tag two  -->
+                        <td class="second-table-td">
+                            <img src="https://images.squarespace-cdn.com/content/v1/55b0e06de4b0cdfd013cfd2c/1556897774243-03Q3SLRFOF2L6JKV5DVI/forms+picture.jpg"
+                                height="220px" width="330px">
+                            <a href="./form-tags-two.html">
+                                <h2 style="text-align: center;">Form</h2>
+                            </a>
+                        </td>
+
+
+                    </tr>
+
+
+
+                </table>
 
 
 
@@ -123,6 +222,9 @@
         <!-- fifth box -->
         <tr>
             <td class="fifth-box" colspan="4" id="contact">
+                <h1 style="text-align: center;">Contact Us</h1>
+                <img src="https://media.istockphoto.com/id/1450058572/photo/businessman-using-a-laptop-and-touching-on-virtual-screen-contact-icons-consists-of-telephone.jpg?s=612x612&w=0&k=20&c=R5wzCGHu6ZS-8EQpJ2Z1tkSbKGGdJH4apVhFM18EXSM="
+                    height="250px" width="350px">
                 <h1>Contact</h1>
                 <b>Phone:</b> <a href="tel: +91 8767418048">+91 8767418048</a><br><br>
                 <b>Email:</b> <a href="mailto:sanchitmahant2107@gmail.com">sanchitmahant80@gmail.com</a><br><br>
