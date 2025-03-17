@@ -8,6 +8,53 @@
     <title>Home Page</title>
 </head>
 <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .container {
+        margin-left: 37%;
+        width: 346px;
+        overflow: hidden;
+      }
+      .container .text {
+        position: relative;
+        color: #35df01;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .container .text.first-text {
+        color: #fff;
+      }
+      .text.sec-text:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #010718;
+        border-left: 2px solid #35df01;
+        animation: animate 4s steps(12) infinite;
+      }
+      @keyframes animate {
+        40%,
+        60% {
+          left: calc(100% + 4px);
+        }
+        100% {
+          left:0%;
+        }
+      }
+
+    *{
+        text-decoration: none;
+        
+    }
     /*first table*/
     .table {
         height: auto;
@@ -38,7 +85,8 @@
     .third-box {
         height: 80vh;
         width: 100vw;
-        background-color: rgb(84, 79, 79);
+        background: linear-gradient(90deg, rgb(205, 205, 212) 12%, rgba(162, 214, 162, 0.499) 44%, rgb(235, 204, 142), rgba(101, 101, 118, 0.727) 100%);
+        
 
         border: 2px solid black;
 
@@ -57,10 +105,14 @@
     .fifth-box {
         height: 80vh;
         width: 100vw;
-        background: rgb(153,201,25);
-background: linear-gradient(90deg, rgb(71, 69, 114) 12%, rgba(9,86,121,1) 44%, rgb(101, 91, 142),rgba(101, 101, 118, 0.727) 100%);
-        border: 2px solid black;
+        background-image: url(https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+       background-position: center;
         
+        border: 2px solid black;
+
     }
 
     /*second table*/
@@ -98,9 +150,12 @@ background: linear-gradient(90deg, rgb(71, 69, 114) 12%, rgba(9,86,121,1) 44%, r
                 <img src="../assets/sanchitmahant.jpg" height="220px" width="250px"
                     style="border-radius: 60%; margin-left: 41%; border: solid 2px white;">
 
-                <h1 style="color: #F5F7F8; text-align: center;">My Self <span style="color: #c84c17;">Sanchit
-                        Mahant</span><br><i>I Am A Full Stack Developer</i>
-                    </h1>
+                <h1 style="color: #F5F7F8; text-align: center;"><div class="container">
+                    <span class="text first-text" style="text-align: center;">My Name is</span>
+                    <span class="text sec-text" style="text-align: center;">Sanchit mahant</span>
+                  </div>
+              
+                </h1>
             </td>
 
         </tr>
@@ -223,8 +278,7 @@ background: linear-gradient(90deg, rgb(71, 69, 114) 12%, rgba(9,86,121,1) 44%, r
         <tr>
             <td class="fifth-box" colspan="4" id="contact">
                 <h1 style="text-align: center;">Contact Us</h1>
-                <img src="https://media.istockphoto.com/id/1450058572/photo/businessman-using-a-laptop-and-touching-on-virtual-screen-contact-icons-consists-of-telephone.jpg?s=612x612&w=0&k=20&c=R5wzCGHu6ZS-8EQpJ2Z1tkSbKGGdJH4apVhFM18EXSM="
-                    height="250px" width="350px">
+              
                 <h1>Contact</h1>
                 <b>Phone:</b> <a href="tel: +91 8767418048">+91 8767418048</a><br><br>
                 <b>Email:</b> <a href="mailto:sanchitmahant2107@gmail.com">sanchitmahant80@gmail.com</a><br><br>
@@ -241,7 +295,27 @@ background: linear-gradient(90deg, rgb(71, 69, 114) 12%, rgba(9,86,121,1) 44%, r
             </td>
         </tr>
     </table>
-
+    <script>
+        const text = document.querySelector(".sec-text");
+  
+        const textLoad = () => {
+          setTimeout(() => {
+            text.textContent = "Sanchit";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "Mahant";
+          }, 4000);
+          setTimeout(() => {
+            text.textContent = "Full stack";
+          }, 8000); 
+          setTimeout(() => {
+            text.textContent = "Developer";
+          }, 12000); 
+        };
+  
+        textLoad();
+        setInterval(textLoad, 16000);
+      </script>
 </body>
 
 </html>
