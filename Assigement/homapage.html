@@ -9,12 +9,6 @@
 </head>
 <style>
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
       
       .container {
         margin-left: 37%;
@@ -30,31 +24,9 @@
       .container .text.first-text {
         color: #fff;
       }
-      .text.sec-text:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #010718;
-        border-left: 2px solid #35df01;
-        animation: animate 4s steps(12) infinite;
-      }
-      @keyframes animate {
-        40%,
-        60% {
-          left: calc(100% + 4px);
-        }
-        100% {
-          left:0%;
-        }
-      }
-
-    *{
-        text-decoration: none;
+      
         
-    }
+
     /*first table*/
     .table {
         height: auto;
@@ -68,7 +40,7 @@
     .first-box {
         height: 60px;
         width: 400px;
-        background-color: rgb(125, 160, 195);
+        background-color: gray;
         border: 2px solid black;
     }
 
@@ -85,8 +57,7 @@
     .third-box {
         height: 80vh;
         width: 100vw;
-        background: linear-gradient(90deg, rgb(205, 205, 212) 12%, rgba(162, 214, 162, 0.499) 44%, rgb(235, 204, 142), rgba(101, 101, 118, 0.727) 100%);
-        
+        background-color: lightblue;
 
         border: 2px solid black;
 
@@ -97,7 +68,7 @@
     .fourth-box {
         height: 80vh;
         width: 100vw;
-        background-color: rgb(88, 130, 140);
+        background-color: rgb(110, 191, 158);
         border: 2px solid black;
     }
 
@@ -105,13 +76,10 @@
     .fifth-box {
         height: 80vh;
         width: 100vw;
-        background-image: url(https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      
-       background-position: center;
+       
         
         border: 2px solid black;
+        background-color: #B7B7B7;
 
     }
 
@@ -148,14 +116,16 @@
         <tr>
             <td class="second-box" colspan="4" id="home">
                 <img src="../assets/sanchitmahant.jpg" height="220px" width="250px"
-                    style="border-radius: 60%; margin-left: 41%; border: solid 2px white;">
+                    style="border-radius: 60%; margin-left: 40%; border: solid 2px white;">
 
                 <h1 style="color: #F5F7F8; text-align: center;"><div class="container">
-                    <span class="text first-text" style="text-align: center;">My Name is</span>
-                    <span class="text sec-text" style="text-align: center;">Sanchit mahant</span>
+                    <span class="text first-text" style="text-align: center;">Sanchit <span style="color: #35df01;">Mahant</span><br>
+                    <span class="text first-text" style="text-align: center;">I am a FullStack <span style="color: #35df01;">Developer</span>
+
                   </div>
-              
                 </h1>
+              
+                
             </td>
 
         </tr>
@@ -163,9 +133,7 @@
         <!-- third tr -->
         <tr>
             <td class="third-box" colspan="4" id="about">
-                <img style="border-radius: 10%;"
-                    src="https://quotefancy.com/media/wallpaper/3840x2160/2000910-Joel-Spolsky-Quote-Good-software-like-wine-takes-time.jpg"
-                    height="250px" width="300px">
+            
 
 
                 <h1 style="text-align: center;">About</h1><br>
@@ -266,6 +234,47 @@
 
                     </tr>
 
+                    <tr>
+                        <!-- resume -->
+                        <td class="second-table-td">
+                            <img src="https://codingyaar.com/wp-content/uploads/Responsive-Bootstrap-Profile-Card-1.png"
+                                height="220px" width="330px">
+                            <a href="../CSS/profilecard.html">
+                                <h2 style="text-align: center;">Profile Card</h2>
+                            </a>
+                        </td>
+
+                        <!--  ches-->
+                        <td class="second-table-td">
+                            <img src="https://sportskhabri.com/wp-content/uploads/2023/01/Virat-Kohlis-Brand-Endorsements-Earnings-and-Net-Worth-Sponsors.webp"
+                                height="220px" width="330px">
+                            <a href="./topinfluencer.html">
+                                <h2 style="text-align: center;">Top Influencer</h2>
+                            </a>
+                        </td>
+                        <!-- student data  -->
+                        <td class="second-table-td">
+                            <img src="https://images.indianexpress.com/2017/08/youtube_logo_new-759.jpg?w=414"
+                                height="220px" width="330px">
+                            <a href="./youtubepage.html">
+                                <h2 style="text-align: center;">You Tube </h2>
+                            </a>
+                        </td>
+
+                        <!-- calculator -->
+                        <td class="second-table-td">
+                            <img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1635275694/Screenshots/guut6wicdxigrou3kdgx.jpg"
+                                height="220px" width="330px">
+                            <a href="./summary-card.html">
+                                <h2 style="text-align: center;">Summary Card</h2>
+                            </a>
+                        </td>
+
+
+
+
+                    </tr>
+
 
 
                 </table>
@@ -279,8 +288,8 @@
             <td class="fifth-box" colspan="4" id="contact">
                 <h1 style="text-align: center;">Contact Us</h1>
               
-                <h1>Contact</h1>
-                <b>Phone:</b> <a href="tel: +91 8767418048">+91 8767418048</a><br><br>
+                <h1 style="color: gray;">Contact</h1>
+               <b>Phone:</b> <a href="tel: +91 8767418048">+91 8767418048</a><br><br>
                 <b>Email:</b> <a href="mailto:sanchitmahant2107@gmail.com">sanchitmahant80@gmail.com</a><br><br>
                 <b>Location:</b>Katol</a><br><br>
                 <b>Git Hub Profile:</b><a href="https://github.com/Sanchit-fs-dev">Git Hub</a><br><br>
@@ -295,27 +304,7 @@
             </td>
         </tr>
     </table>
-    <script>
-        const text = document.querySelector(".sec-text");
-  
-        const textLoad = () => {
-          setTimeout(() => {
-            text.textContent = "Sanchit";
-          }, 0);
-          setTimeout(() => {
-            text.textContent = "Mahant";
-          }, 4000);
-          setTimeout(() => {
-            text.textContent = "Full stack";
-          }, 8000); 
-          setTimeout(() => {
-            text.textContent = "Developer";
-          }, 12000); 
-        };
-  
-        textLoad();
-        setInterval(textLoad, 16000);
-      </script>
+   
 </body>
 
 </html>
