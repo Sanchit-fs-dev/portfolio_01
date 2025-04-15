@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-      
-      .container {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #223776;
+    }
+
+    .container {
         margin-left: 37%;
         width: 346px;
         overflow: hidden;
-      }
-      .container .text {
+    }
+
+    .container .text {
         position: relative;
         color: #35df01;
         font-size: 30px;
         font-weight: 600;
-      }
-      .container .text.first-text {
-        color: #fff;
-      }
-      
-        
+    }
 
-    /*first table*/
-    .table {
-        height: auto;
-        width: 100vw;
-        border: 2px solid black;
+    .container .text.first-text {
+        color: #fff;
+    }
+
+    /* Flexbox layout to align text and image side by side */
+    .text-image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        /* Make the container fill the height */
+        padding: 20px;
+    }
+
+    .text-container {
+
+        color: white;
+        font-size: 60px;
+        margin-left: 8%;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+
+    .image-container {
+        /* Fix the image container width */
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: 400px;
+        margin-right: 50px;
+        border-radius: 20%;
 
 
     }
 
-    /*first table first box*/
+    /* Styling for button */
+    button {
+        margin-top: 4%;
+        height: 8vh;
+        width: 14vw;
+        font-size: 11px;
+
+        border-radius: 18px;
+        background-color: rgb(114, 214, 52);
+    }
+
+    button:hover {
+        color: #eaf2e8;
+        background-color: rgb(79, 195, 40);
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    /* Table styling (unchanged) */
+    .table {
+        height: auto;
+        width: 100vw;
+        border: 2px solid black;
+    }
+
     .first-box {
         height: 60px;
         width: 400px;
@@ -44,267 +109,116 @@
         border: 2px solid black;
     }
 
-    /*first table second box*/
     .second-box {
-        height: 80vh;
+        height: 90vh;
         width: 100vw;
-        background-color: #000000;
-        border: 2px solid black;
-
-    }
-
-    /*first table third box*/
-    .third-box {
-        height: 80vh;
-        width: 100vw;
-        background-color: lightblue;
-
-        border: 2px solid black;
-
-    }
-
-    /*first table fourth box*/
-
-    .fourth-box {
-        height: 80vh;
-        width: 100vw;
-        background-color: rgb(110, 191, 158);
+        background-color: #09122C;
         border: 2px solid black;
     }
 
-    /*first table fifth box*/
-    .fifth-box {
-        height: 80vh;
-        width: 100vw;
-       
-        
-        border: 2px solid black;
-        background-color: #B7B7B7;
 
-    }
 
-    /*second table*/
-    .second-table {
+
+
+
+
+
+    .nav-header {
         width: 100%;
-        height: 90%;
-        border-collapse: collapse;
+        height: 80px;
+        background-color: #27548A;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
     }
 
-    /*second  table first td*/
-    .second-table-td {
-        border: solid 3px black;
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-links {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-family: "Alegreya Sans SC", sans-serif;
+        text-decoration: none;
+    }
+
+    .header-links h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10%;
+        color: rgb(244, 247, 244);
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .header-links h1:hover {
+        color: #2c2b2b;
+        transform: scale(1.1);
+    }
+
+
+
+
+
+    p {
+        color: white;
+        margin-bottom: 10%;
     }
 </style>
 
 <body>
+    <div class="main-container">
+        <!-- header section -->
+        <header class="nav-header">
+            <div class="logo">
+                <h1 style="margin-top: 2.5%; margin-left: 3%; color: rgb(224, 245, 69);">𝕾𝖆𝖓𝖈𝖍𝖎𝖙</h1>
+            </div>
+            <div class="header-links">
+                <h1>Home</h1>
+                <a style="text-decoration: none;" href="./aboutpage.html">
+                    <h1>About</h1>
+                </a>
+                <a style="text-decoration: none;" href="./project.html">
+                    <h1>Projects</h1>
+                </a>
+                <a style="text-decoration: none;" href="./contact.html">
+                <h1 id="Contact">Contact</h1>
+            </a>
+            </div>
+        </header>
+
+        <!-- home section-->
+        <section class="home"></section>
+        <!-- about section -->
+        <section class="contact"></section>
+    </div>
+
+    <!-- Content section with text and image side by side -->
     <table>
         <tr>
-            <th class="first-box"><a href="#home">
-                    <h2>Home</h2>
-                </a></th>
-            <th class="first-box"><a href="#about">
-                    <h2>About</h2>
-                </a></th>
-            <th class="first-box"><a href="#project">
-                    <h2>Project</h2>
-                </a></th>
-            <th class="first-box"><a href="#contact">
-                    <h2>Contact</h2>
-                </a></th>
-        </tr>
-        <!-- second tr -->
-        <tr>
             <td class="second-box" colspan="4" id="home">
-                <img src="../assets/sanchitmahant.jpg" height="220px" width="250px"
-                    style="border-radius: 60%; margin-left: 40%; border: solid 2px white;">
-
-                <h1 style="color: #F5F7F8; text-align: center;"><div class="container">
-                    <span class="text first-text" style="text-align: center;">Sanchit <span style="color: #35df01;">Mahant</span><br>
-                    <span class="text first-text" style="text-align: center;">I am a FullStack <span style="color: #35df01;">Developer</span>
-
-                  </div>
-                </h1>
-              
-                
-            </td>
-
-        </tr>
-
-        <!-- third tr -->
-        <tr>
-            <td class="third-box" colspan="4" id="about">
-            
-
-
-                <h1 style="text-align: center;">About</h1><br>
-
-                <h2 style="text-align: center;">Hello there! I'm Sanchit Mahant, a passionate Full Stack Web Developer
-                    <br> with a keen interest in
-                    leveraging technology to create impactful solutions. <br> With a solid foundation in both front-end
-                    and
-                    back-end development, <br>I specialize in creating project from various language.
-                </h2>
-            </td>
-        </tr>
-        <!-- fourth tr -->
-        <tr>
-            <td class="fourth-box" colspan="4" id="project">
-                <!-- second table
-                  -->
-                <table class="second-table">
-                    <caption>
-                        <h1>HTML Project</h1>
-                    </caption>
-                    <tr>
-                        <!-- resume -->
-                        <td class="second-table-td">
-                            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/689/327/small/resume-cv-template.jpg"
-                                height="220px" width="330px">
-                            <a href="./resume.html">
-                                <h2 style="text-align: center;">Resume</h2>
-                            </a>
-                        </td>
-
-                        <!--  ches-->
-                        <td class="second-table-td">
-                            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/board/1/c/0/premium-quality-black-white-chess-board-with-32-pawns-1-0-3-hhs-original-imaghzmjzrvnuyfs.jpeg?q=20&crop=false"
-                                height="220px" width="330px">
-                            <a href="./chessproject.html">
-                                <h2 style="text-align: center;">Chess</h2>
-                            </a>
-                        </td>
-                        <!-- student data  -->
-                        <td class="second-table-td">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3pvvdEqvnjPlpej9NJldMkEfDy3a0kXwOQ&s"
-                                height="220px" width="330px">
-                            <a href="./studentdata.html">
-                                <h2 style="text-align: center;">Student Data</h2>
-                            </a>
-                        </td>
-
-                        <!-- calculator -->
-                        <td class="second-table-td">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcuqZpxzUU47pk2cEyKSGy_S7CXBoAszF80A&s"
-                                height="220px" width="330px">
-                            <a href="./calculator.html">
-                                <h2 style="text-align: center;">Calculator</h2>
-                            </a>
-                        </td>
-
-
-
-
-                    </tr>
-
-                    <tr>
-                        <!-- cpu component -->
-                        <td class="second-table-td">
-                            <img src="https://t3.ftcdn.net/jpg/00/81/24/72/360_F_81247213_OYvGTCn5mnQQ2c0gWJ1U5ixcbmNBaMOp.jpg"
-                                height="220px" width="330px">
-                            <a href="./cpucomp.html">
-                                <h2 style="text-align: center;">CPU Component</h2>
-                            </a>
-                        </td>
-                        <!-- form tag -->
-                        <td class="second-table-td">
-                            <img src="https://i.ytimg.com/vi/_JrIZaD-K-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmghCTvgjjoeTkQH4q6V51Nn9S2w"
-                                height="220px" width="330px">
-                            <a href="./form.html">
-                                <h2 style="text-align: center;">Sign Up Form</h2>
-                            </a>
-                        </td>
-                        <!-- report card -->
-                        <td class="second-table-td">
-                            <img src="https://marketplace.canva.com/EADajq5bun4/1/0/1131w/canva-blue-and-gray-bordered-high-school-report-card-JZh8rodULdI.jpg"
-                                height="220px" width="330px">
-                            <a href="./reportcard.html">
-                                <h2 style="text-align: center;">Report Card</h2>
-                            </a>
-                        </td>
-
-                        <!-- form tag two  -->
-                        <td class="second-table-td">
-                            <img src="https://images.squarespace-cdn.com/content/v1/55b0e06de4b0cdfd013cfd2c/1556897774243-03Q3SLRFOF2L6JKV5DVI/forms+picture.jpg"
-                                height="220px" width="330px">
-                            <a href="./form-tags-two.html">
-                                <h2 style="text-align: center;">Form</h2>
-                            </a>
-                        </td>
-
-
-                    </tr>
-
-                    <tr>
-                        <!-- resume -->
-                        <td class="second-table-td">
-                            <img src="https://codingyaar.com/wp-content/uploads/Responsive-Bootstrap-Profile-Card-1.png"
-                                height="220px" width="330px">
-                            <a href="../CSS/profilecard.html">
-                                <h2 style="text-align: center;">Profile Card</h2>
-                            </a>
-                        </td>
-
-                        <!--  ches-->
-                        <td class="second-table-td">
-                            <img src="https://sportskhabri.com/wp-content/uploads/2023/01/Virat-Kohlis-Brand-Endorsements-Earnings-and-Net-Worth-Sponsors.webp"
-                                height="220px" width="330px">
-                            <a href="./topinfluencer.html">
-                                <h2 style="text-align: center;">Top Influencer</h2>
-                            </a>
-                        </td>
-                        <!-- student data  -->
-                        <td class="second-table-td">
-                            <img src="https://images.indianexpress.com/2017/08/youtube_logo_new-759.jpg?w=414"
-                                height="220px" width="330px">
-                            <a href="./youtubepage.html">
-                                <h2 style="text-align: center;">You Tube </h2>
-                            </a>
-                        </td>
-
-                        <!-- calculator -->
-                        <td class="second-table-td">
-                            <img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1635275694/Screenshots/guut6wicdxigrou3kdgx.jpg"
-                                height="220px" width="330px">
-                            <a href="./summary-card.html">
-                                <h2 style="text-align: center;">Summary Card</h2>
-                            </a>
-                        </td>
-
-
-
-
-                    </tr>
-
-
-
-                </table>
-
-
-
-            </td>
-        </tr>
-        <!-- fifth box -->
-        <tr>
-            <td class="fifth-box" colspan="4" id="contact">
-                <h1 style="text-align: center;">Contact Us</h1>
-              
-                <h1 style="color: gray;">Contact</h1>
-               <b>Phone:</b> <a href="tel: +91 8767418048">+91 8767418048</a><br><br>
-                <b>Email:</b> <a href="mailto:sanchitmahant2107@gmail.com">sanchitmahant80@gmail.com</a><br><br>
-                <b>Location:</b>Katol</a><br><br>
-                <b>Git Hub Profile:</b><a href="https://github.com/Sanchit-fs-dev">Git Hub</a><br><br>
-                <b>Linkedin:</b> <a
-                    href="https://www.linkedin.com/in/sanchit-mahant-6a5657318/?originalSubdomain=in">linkedin</a><br><br>
-                <b>Skype:</b>Available</a><br><br>
-
-
-
-
-
+                <div class="text-image-container">
+                    <!-- Text container -->
+                    <div class="text-container">
+                        <h2 style="font-size: 60px;">Hi, I'm <br>
+                            <span style="color:rgb(214, 163, 52)">Sanchit Mahant</span>
+                        </h2>
+                        <p>A passionate Web Developer & QA Engineer specializing in <br>HTML, <span
+                                style="color: #c67109;">CSS</span>, JavaScript, and Learning More To Develop. <br>
+                            <a href="../CSS/classassignmen.html"><button>Download CV </button></a>
+                        </p>
+                    </div>
+                    <!-- Image container -->
+                    <div class="image-container">
+                        <img src="https://potomac.edu/wp-content/uploads/2020/12/benefits-of-coding-e1606911064541.jpg">
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
-   
 </body>
 
 </html>
