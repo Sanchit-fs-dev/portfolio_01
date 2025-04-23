@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    color: white;
+    size: 45px;
+}
+
+td{
+    border: 3px solid white; 
+    size: 400px;
+}
+
+p{
+    background-color: aqua;
+}
+
+a{
+    background-color: brown;
+}
+.red{
+    background-color: aquamarine;
+}
+#firstdiv{
+    background-color: blue;
+}
+.second{
+    background-color: aquamarine;
+}
+#seconddiv{
+    background-color: olive;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            color: #1c1919;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .feature {
+            background: lightgray;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .feature svg {
+            margin-right: 10px;
+        }
+
+        .blue-icon {
+            color: #3b82f6;
+        }
+
+        .red-icon {
+            color: #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">About Me</h1>
+    <br>
+    <br>
+    <section class="about-section">
+        <div class="about-image">
+            <img src="../assets/myself.jpg" height="600px" width="130px">
+        </div>
+
+        <div class="about-content">
+            <h2>Sanchit Mahant</h2>
+            <p>Hello there! I'm Sanchit Mahant, a passionate Full Stack Web Developer with a keen interest in leveraging technology to create impactful solutions. With a solid foundation in both front-end and back-end development, I specialize in creating project from various language. <br>
+
+                Skills & Expertise: <br> 
+                Front-end: HTML, CSS, Boostrap, React js,JavaScript (ES6+). <br>
+                Back-end: SQL,MYSQL <br>
+                Version Control: Git, GitHub <br>
+                Responsive Web Design</p>
+            <p>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>
+                      Skills
+                    </h3>
+                    <p>
+                        <ul>
+                            <li>
+                                HTML <br> </li>
+                                <li>CSS <br></li>
+                                <li> JavaScript <br></li>
+                                    <li> boostrap <br></li>
+                           
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>
+                       Professional Skills
+                    </h3>
+                    <p>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Creativity</li>
+                            <li>Error Handling</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- { background: linear-gradient( rgb(19, 19, 21), rgb(34, 32, 32), rgb(26, 27, 26) ,rgb(21, 17, 17));} -->

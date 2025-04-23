@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body */
+
+        body {
+            background-color: cadetblue;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* main section */
+        .main-section {
+            background-color: white;
+            width: 157vh;
+            height: 97vw;
+            border-radius: 10px;
+            padding: 15px;
+            margin-left: 50px;
+        }
+
+        .Registation {
+            font-size: 40px;
+            margin-left: 5%;
+            margin-top: 2%;
+
+        }
+
+        hr {
+            width: 3.2%;
+            height: 3px;
+            margin-right: 91.6%;
+            margin-top: -2%;
+            background: linear-gradient(to right, #c8b452, #74c709c4, #2db5e2c4);
+        }
+
+        /* Form Section */
+        .inner-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        label {
+            height: 10vh;
+            width: 100vw;
+            font-size: 23px;
+        }
+
+        .input {
+            height: 4vh;
+            width: 30vw;
+
+            height: 50px;
+            width: 480px;
+            font-size: 20px;
+            margin-top: 10px;
+
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="main-section">
+            <h1 class="Registation" style="margin-bottom: 2%;">Registration</h1>
+            <hr>
+            <!-- form section -->
+            <div class="inner-section">
+                <div>
+                    <label for="">Full Name</label>
+                    <br>
+                    <input type="text" placeholder="Full Name" class="input">
+                </div>
+                <!-- second label -->
+                <div>
+                    <label for="">Username</label>
+                    <br>
+                    <input type="text" placeholder="Full Name" class="input">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <br>
+                    <input type="email" placeholder="Enter Your Email" class="input">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <br>
+                    <input type="number" placeholder="Enter Your Number" class="input">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" class="input">
+                </div>
+                <div>
+                    <label for="">Confirm Password</label>
+                    <br>
+                    <input type="password" placeholder="Confirm Your Password" class="input">
+                    <br>
+                    <br>
+
+                </div>
+                <div>
+                    <h1>Gender</h1>
+                    <input type="radio" name="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="female">
+                    <label for="">Female</label>
+                    <input type="radio" name="other">
+                    <label for="">Prefer not to say</label>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <div class="main-two"></div>
+
+    </section>
+
+</body>
+
+</html>
